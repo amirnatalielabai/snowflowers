@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Pastel Flower Fall</title>
+    <style>
+        body {
+            margin: 0;
+            padding: 0;
+            background-color: #ffdae0; /* Pastel Pink */
+            overflow: hidden;
+            height: 100vh;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+        }
+
+        h1 {
+            color: #d4a5a5;
+            font-size: 3rem;
+            text-shadow: 2px 2px 4px rgba(0,0,0,0.1);
+            z-index: 1;
+        }
+
+        /* Flower Styling */
+        .flower {
+            position: absolute;
+            top: -10%;
+            user-select: none;
+            cursor: default;
+            z-index: 0;
+            animation: fall linear infinite;
+        }
+
+        @keyframes fall {
+            0% {
+                transform: translateY(0) rotate(0deg);
+                opacity: 1;
+            }
+            100% {
+                transform: translateY(110vh) rotate(360deg);
+                opacity: 0.7;
+            }
+        }
+
+        /* Generating different positions and speeds */
+        .f1 { left: 10%; font-size: 20px; animation-duration: 7s; animation-delay: 0s; }
+        .f2 { left: 25%; font-size: 30px; animation-duration: 10s; animation-delay: 2s; }
+        .f3 { left: 40%; font-size: 25px; animation-duration: 8s; animation-delay: 4s; }
+        .f4 { left: 55%; font-size: 35px; animation-duration: 12s; animation-delay: 1s; }
+        .f5 { left: 70%; font-size: 22px; animation-duration: 9s; animation-delay: 5s; }
+        .f6 { left: 85%; font-size: 28px; animation-duration: 11s; animation-delay: 3s; }
+        .f7 { left: 15%; font-size: 24px; animation-duration: 13s; animation-delay: 6s; }
+        .f8 { left: 95%; font-size: 32px; animation-duration: 10s; animation-delay: 0.5s; }
+    </style>
+</head>
+<body>
+
+    <h1>Pastel Dreams</h1>
+
+    <div class="flower f1">🌸</div>
+    <div class="flower f2">🌸</div>
+    <div class="flower f3">🌸</div>
+    <div class="flower f4">🌸</div>
+    <div class="flower f5">🌸</div>
+    <div class="flower f6">🌸</div>
+    <div class="flower f7">🌸</div>
+    <div class="flower f8">🌸</div>
+    <div class="flower f1" style="left: 50%; animation-delay: 7s;">🌸</div>
+    <div class="flower f3" style="left: 80%; animation-delay: 9s;">🌸</div>
+
+</body>
+</html>
